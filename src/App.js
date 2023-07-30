@@ -30,16 +30,14 @@ import Header from "./components/Header";
 function App() {
     return (
         <div className='main'>
-             <Routes>
-        <Route path="/" element={<Header />}>
-          {/* <Route path="subtask1/:parameter" element={<Subtask1 />} />
-          <Route path="subtask2/*" element={<Subtask2 />} />
-          <Route path="subtask3" element={<Subtask3 />} />
-          <Route path="subtask4" element={<Subtask4/>} /> */}
-        </Route >
-      </Routes>
-   
-   
+            <Routes>
+                <Route path="/" element={<Header />}>
+                {/* <Route path="subtask1/:parameter" element={<Subtask1 />} />
+                <Route path="subtask2/*" element={<Subtask2 />} />
+                <Route path="subtask3" element={<Subtask3 />} />
+                <Route path="subtask4" element={<Subtask4/>} /> */}
+                </Route >
+            </Routes>
         </div>
     );
 }
