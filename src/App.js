@@ -21,7 +21,7 @@ import './App.css';
 //     </div>
 //   );
 // }
-
+import { Routes, Route} from 'react-router-dom';
 import Header from "./components/Header";
 // import Content from "./components/Content";
 // import Footer from './components/Footer'
@@ -30,11 +30,15 @@ import Header from "./components/Header";
 function App() {
     return (
         <div className='main'>
-       
-                <Header />
-                {/* <Banner />
-                <Content />
-                <Footer /> */}
+             <Routes>
+        <Route path="/" element={<Header />}>
+          {/* <Route path="subtask1/:parameter" element={<Subtask1 />} />
+          <Route path="subtask2/*" element={<Subtask2 />} />
+          <Route path="subtask3" element={<Subtask3 />} />
+          <Route path="subtask4" element={<Subtask4/>} /> */}
+        </Route >
+      </Routes>
+   
    
         </div>
     );
