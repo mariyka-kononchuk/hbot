@@ -1,21 +1,56 @@
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export const Logo = styled.img`
+export const NavBar = styled.nav`
+  display: flex;
+  padding: 10px 0px 10px 0px;
+`;
+
+export const LogoWrapper = styled.div`
+  display: flex;
+`;
+
+export const Image = styled.img`
   width: 50px;
 
   @media screen and (min-width: 768px) {
-    width: 40px;
+    width: 80px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 50px;
+    width: 80px;
   }
 `;
-export const StyledLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const LogoLink = styled(NavLink)`
+  margin-right: 10px;
+`;
+
+export const Name = styled.p`
+  font-weight: 700;
+  font-size: 14px;
+`;
+
+export const SubName = styled.p`
+  font-weight: 400;
+  font-size: 12px;
+`;
+
+export const List = styled.ul`
+  //width: 50px;
+
+  @media screen and (min-width: 768px) {
+    //width: 40px;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1280px) {
+    //width: 50px;
+  }
+`;
+export const StyledLink = styled(NavLink)`
+  //display: flex;
+  //justify-content: center;
+  //align-items: left;
 
   width: 189px;
   height: 59px;
@@ -27,7 +62,7 @@ export const StyledLink = styled(Link)`
   letter-spacing: 0.02;
   text-transform: uppercase;
 
-  color: #000000;
+  color: #757575;
   background-color: #f5f6fb;
   text-decoration: none;
 
