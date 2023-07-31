@@ -1,39 +1,49 @@
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
 
+export const Box = styled.div`
+  border-bottom: 1px solid rgb(209, 209, 209);
+`;
+
 export const NavBar = styled.nav`
   display: flex;
-  padding: 10px 0px 10px 0px;
+  justify-content: space-between;
+  padding: 20px 0px 20px 0px;
   color: #7a7a7a;
 `;
 
 export const LogoWrapper = styled.div`
   display: flex;
+  // width: 350px;
 `;
 
 export const Image = styled.img`
   width: 50px;
 
   @media screen and (min-width: 768px) {
-    width: 80px;
+    width: 60px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 80px;
+    width: 60px;
   }
 `;
 export const LogoLink = styled(NavLink)`
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
 `;
 
 export const Name = styled.p`
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 38px;
+  color: rgb(34, 34, 34);
 `;
 
 export const SubName = styled.p`
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
+  color: rgb(58, 58, 58);
 `;
 
 export const List = styled.ul`
@@ -42,6 +52,7 @@ export const List = styled.ul`
   @media screen and (min-width: 768px) {
     //width: 40px;
     display: flex;
+    align-items: center;
   }
 
   @media screen and (min-width: 1280px) {
@@ -62,25 +73,25 @@ export const StyledLink = styled(NavLink)`
   //height: 59px;
 
   //font-family: Roboto;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.167;
   letter-spacing: 0.02;
   //text-transform: uppercase;
 
-  color: #6ec1e4;
+  color: #30a4e1;
   //background-color: #f5f6fb;
   text-decoration: none;
 
   &.active {
-    color: #6ec1e4;
+    color: #7a7a7a;
     //background-color: #ff751d;
   }
 
   &:hover {
     //text-decoration: underline;
     cursor: pointer;
-    color: #6ec1e4;
+    color: #7a7a7a;
   }
 
   @media screen and (min-width: 768px) {
